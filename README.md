@@ -24,4 +24,4 @@ phases:
     commands:
       - echo "Build is Successful"   
       
-  
+  - credenatils must be uodated in ssm param store
