@@ -1,4 +1,3 @@
-aws CodeBuild
 version: 0.2
 
 env:
@@ -24,4 +23,5 @@ phases:
     commands:
       - echo "Build is Successful"   
       
-  - credenatils must be uodated in ssm param store
+  # credenatils must be uodated in ssm param store
+  # Trigger the CI process
