@@ -2,4 +2,8 @@
 set -e
 
 #Stop the running container (if any)
-docker stop $(docker ps -q --filter ancestor=anjirangappagari1/simple-python-flask-app:latest) || true
+containerid=$(docker ps -q)
+if [ ! -z "$containerid" ]; then
+  docker stop "$containerid"
+fi
+docker rm -f "$containerid"
